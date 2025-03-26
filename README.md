@@ -6,13 +6,14 @@ WeatherSense is a machine learning project that predicts weather types based on 
 ## Project Development Journey
 
 ### Initial Dataset Evaluation
-The project began with an initial dataset ("monthly_profits.csv") containing meteorological measurements such as:
+The project began with an initial dataset ("Weather Data.csv") containing meteorological measurements:
 - Temperature
 - Dew Point Temperature
 - Relative Humidity
 - Wind Speed
 - Visibility
 - Pressure
+**Target Variable:**
 - Weather categories
 
 However, correlation analysis revealed extremely weak relationships between the predictive features and the target weather variable:
@@ -65,11 +66,6 @@ The project implements two classification algorithms:
 - Appropriate for features with complex distributions
 - Hyperparameter tuning for variance smoothing
 
-## Feature Engineering
-Additional features derived from base measurements:
-- Temperature-Humidity interaction
-- Wind-Precipitation interaction
-- Season-Location combinations
 
 ## Evaluation Metrics
 Models are evaluated using:
